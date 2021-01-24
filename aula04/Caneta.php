@@ -2,7 +2,7 @@
 //CLASSE MODELO DO OBJETO
     class Caneta{
         //ATRIBUTOS
-        private $modelo;    
+        private $modelo;
         private $ponta;
         private $cor;
         private $tampada;
@@ -11,12 +11,12 @@
         //public function Caneta(){ /*__construct()  ou o nome da classe*/
           //  $this->cor = "AZUL";
           //  $this->tampar();
-        //} OUTRO TIPO DE CONSTRUTOR MAIS DINAMICO RECEBENDO OS VALORES 
+        //} OUTRO TIPO DE CONSTRUTOR MAIS DINAMICO RECEBENDO OS VALORES
         public function Caneta($m, $c, $p){
             $this->modelo = $m;
             $this->cor = $c;
             $this->ponta = $p;
-            
+
             /*$this->setMdelo($m);
             $this->setPonta($p);
             $this->setCor($c);*/
@@ -49,7 +49,7 @@
        public function setCor($c){
         $this->cor = $c;
     }
-        
+
 }
 
 ?>
