@@ -25,7 +25,7 @@
             $this->carga += $valor;
             echo 'A Caneta <strong>'.$this->cor.'</strong> foi RECARREGADA CARGA : '.$this->carga.'<br>';
         }
-        function rabiscar(){
+         function rabiscar(){
             
             if ($this->tampada == true) {
                 # code...
@@ -38,10 +38,10 @@
             }
             
         }
-        function tampar(){
+         function tampar(){
             $this->tampada = true;
         }
-        function destampar(){
+         function destampar(){
             $this->tampada = false;
         }
 
