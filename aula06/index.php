@@ -3,30 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AULA 05 BANCO</title>
+    <title>AULA 06 BANCO</title>
 </head>
 <body>
+
 <form action="index.php" method="post">
-Campo 1: <input type="text" name="campo1"><br>
-Campo 2: <input type="text" name="campo2"><br>
-<input type=submit value="OK">
+<input type="submit" name="campo1" value="ligar">
+<input type="submit" name="campo1" value="desligar"><br>
+<input type="button" name="campo1" value="aumentar">
+<input type="button" name="campo1" value="diminuir"><br>
+
 </form>
 <pre>
 
 <?php
 
-    echo "O valor de CAMPO 1 é: " . $_POST["campo1"];
-    echo "<br>O valor de CAMPO 2 é: " . $_POST["campo2"]."</br>";
+    echo "O valor de CAMPO 1 é: " . $_POST["campo1"]."<br>";
+    //echo "<br>O valor de CAMPO 2 é: " . $_POST["campo2"]."</br>";
     $n =  $_POST["campo1"];
-    
+    var_dump($n);
     require_once "Controlador.php";
     // INICIAR OBJETO $c1 = new Object();
     $c1 = new ControleRemoto;
     //construtor do objeto
     $c1->ControleRemoto();
     print_r($c1);
-    echo 'n';
-    $c1.$n;
+    $c1->teste($n);
     
     
 

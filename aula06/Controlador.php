@@ -25,6 +25,23 @@ public function ControleRemoto()
         private function setTocando($t){$this->tocando = $t;}     
 
 //METODOS SIMPLES
+        public function teste($v){
+           switch ($v) {
+               case 'ligar':
+                   $this->ligar();
+                   break;
+               case 'desligar':
+                    $this->desligar();
+                    break;     
+               case 'aumentar':
+                   $this->maisVolume();
+                    break;                
+               default:
+                   echo "COMANDO NÃO ENCONTRADO";
+                   break;
+           }
+        }
+
         public function ligar(){
             $this->setLigado(true);
             echo '<h1>LIGOU!</h1>';
