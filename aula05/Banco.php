@@ -1,5 +1,5 @@
 <?php
-    class Banco{
+    class Conta{
         public $nome;
         protected $nomeCliente;
         public $nConta;
@@ -7,7 +7,7 @@
         private $saldo;
 
 //CONSTRUTOR
-        public function Banco($b,$c,$nC,$tC,$s){
+        public function Conta($b,$c,$nC,$tC,$s){
             $this->nome = $b;
             $this->nomeCliente = $c;
             $this->nConta = $nC;
