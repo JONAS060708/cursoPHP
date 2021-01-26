@@ -30,20 +30,20 @@ public function __construct($nome='',$nacionalidade='',$idade=0,$altura=0,$peso=
     
 }        
 //MÉTODOS ESPECIAIS GETERS E SETERS NA MAIORIA PRIVADOS
-private function getaltura(){return $this->altura;}
-private function setaltura($altura){$this->altura = $altura;}
-private function getnacionalidade(){return $this->nacionalidade;}
-private function setnacionalidade($nacionalidade){$this->nacionalidade = $nacionalidade;}
-private function getidade(){return $this->idade;}
-private function setidade($idade){$this->idade = $idade;}
-private function getnome(){return $this->nome;}
-private function setnome($nome){$this->nome = $nome;}
-private function getpeso(){return $this->peso;}
-private function setpeso($peso){
+public function getaltura(){return $this->altura;}
+public function setaltura($altura){$this->altura = $altura;}
+public function getnacionalidade(){return $this->nacionalidade;}
+public function setnacionalidade($nacionalidade){$this->nacionalidade = $nacionalidade;}
+public function getidade(){return $this->idade;}
+public function setidade($idade){$this->idade = $idade;}
+public function getnome(){return $this->nome;}
+public function setnome($nome){$this->nome = $nome;}
+public function getpeso(){return $this->peso;}
+public function setpeso($peso){
     $this->peso = $peso;
     $this->setcategoria();
 }
-private function getcategoria(){return $this->categoria;}
+public function getcategoria(){return $this->categoria;}
 private function setcategoria(){
     $v = $this->getpeso();
     if ($v < 52) {
@@ -103,32 +103,4 @@ private function setderrotas($derrotas){$this->derrotas = $derrotas;}
     }
 
     //----------------------------------------//
-    class Luta{
-        private $desafiado, $desafiante,$rounds,$aprovada;
-
-        public function __construct($desafiado,$desafiante,$rounds,$aprovada){
-            $this->setaprovada($aprovada);
-            $this->setdesafiado($desafiado);
-            $this->setdesafiante($desafiante);
-            $this->setrounds($rounds);
-
-        }
-
-        private function getdesafiado(){return $this->desafiado;}
-        private function getdesafiante(){return $this->desafiante;}
-        private function getrounds(){return $this->rounds;}
-        private function getaprovada(){return $this->aprovada;}
-
-        private function setdesafiante($d){$this->desafiante = $d;}
-        private function setdesafiado($d){$this->desafiado = $d;}
-        private function setrounds($r){$this->rounds = $r;}
-        private function setaprovada($a){$this->aprovada = $a;}
-        
-        public function marcarLuta(){
-
-        }
-        public function lutar(){
-
-        }
-        
-    }
+    
