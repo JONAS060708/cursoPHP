@@ -11,7 +11,7 @@ require_once 'Interface.php';
 //CONSTRUTOR
 public function ControleRemoto()
 {
-    $this->volume = 50;
+    $this->volume = 10;
     $this->ligado = false;
     $this->tocando = false;
 }
@@ -69,9 +69,9 @@ public function ControleRemoto()
         }
         public function fecharMenu(){}
         public function maisVolume(){
-            if ($this->getLigado() && $this->getVolume() <= 90) {
+            if ($this->getLigado() && $this->getVolume() <= 99) {
                 # code...
-                $this->setVolume($this->getVolume() +10 );
+                $this->setVolume($this->getVolume() +1 );
             }else if ($this->getLigado() && $this->getVolume() == 100) {
                 # code...
                 echo '<h1>Volume já está no máximo!</h1>';
@@ -80,9 +80,9 @@ public function ControleRemoto()
             }
         }
         public function menosVolume(){
-            if ($this->getLigado() && $this->getVolume() >= 10) {
+            if ($this->getLigado() && $this->getVolume() >= 1) {
                 # code...
-                $this->setVolume($this->getVolume() -10 );
+                $this->setVolume($this->getVolume() -1 );
             }else if ($this->getLigado() && $this->getVolume() == 0) {
                 # code...
                 echo '<h1>Volume já está no mínimo</h1>';

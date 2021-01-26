@@ -17,16 +17,19 @@
 <pre>
 
 <?php
-
+    require_once "Controlador.php";
+    //require_once "Interface.php";
     echo "VALOR VEIO DO HTML ==> " . $_POST["campo1"]."<br>";
     //echo "<br>O valor de CAMPO 2 é: " . $_POST["campo2"]."</br>";
     $n =  $_POST["campo1"];
     var_dump($n);
-    require_once "Controlador.php";
+    
     // INICIAR OBJETO $c1 = new Object();
     $c1 = new ControleRemoto;
     //construtor do objeto
     $c1->ControleRemoto();
+    $c1->teste($n);
+    $c1->maisVolume();
     $c1->teste($n);
     //print_r($c1);
     
@@ -39,7 +42,6 @@
     $c1->pause();
     $c1->ligar();
     $c1->play();
-    $c1->maisVolume(); 
     $c1->maisVolume(); 
     $c1->maisVolume(); 
     $c1->maisVolume(); 
