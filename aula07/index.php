@@ -9,15 +9,14 @@
 
 <body>
 
-
     <pre>
 
 <?php
 require_once "Controlador.php";
 require_once "luta.php";
 $L = array(2);
-$L[0] = new Lutador('Jonas', 'Brasileiro', 32, 1.75, 72, 0, 1, 0);
-$L[1] = new Lutador('Cesar', 'Brasileiro', 28, 1.80, 72, 10, 3, 2);
+$L[0] = new Lutador('Sabrina', 'Brasileiro', 25, 1.56, 58, 1, 0, 0);
+$L[1] = new Lutador('Leticia', 'Brasileiro', 34, 1.57, 52, 0, 1, 0);
 /**
  * $L[2] = new Lutador('Sabrina','Brasileiro',26,1.56,56,0,0,0);
  * $L[3] = new Lutador('GOKU','DRAGON BAL Z',36,1.85,120);

@@ -83,13 +83,9 @@ private function setderrotas($derrotas){$this->derrotas = $derrotas;}
         ';
     }
     public function status(){
-        echo'<p>
-        <strong>'.$this->getnome().'</strong> é um lutador com : <br>
-        Peso :'.$this->getpeso().'-Kg<br>
-        Vitórias :'.$this->getvitorias().'</br>
-        Derrotas :'.$this->getderrotas().'</br>
-        Empates :'.$this->getempates().'</br>
-        </p>';
+        echo'
+        <strong>'.$this->getnome().'</strong> é um lutador com Peso :'.$this->getpeso().'-Kg Vitórias :'.$this->getvitorias().' Derrotas :'.$this->getderrotas().' Empates :'.$this->getempates().'
+        ';
     }    
     public function ganharLuta(){
         $this->setvitorias($this->getvitorias() +1 );
