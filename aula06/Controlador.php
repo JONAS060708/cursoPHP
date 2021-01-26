@@ -2,7 +2,7 @@
 // BUSCAR INTERFACE
 require_once 'Interface.php';
 //CLASSE
-    class ControleRemoto implements Controlador {
+    class ControleRemoto implements ControleRemotoI {
     //ATRIBUTOS    
        private $volume;
        private $ligado;

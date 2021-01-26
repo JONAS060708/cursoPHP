@@ -1,6 +1,6 @@
 <?php
 
- interface Controlador{
+ interface ControleRemotoI{
      
      public function ligar();
      public function desligar();
