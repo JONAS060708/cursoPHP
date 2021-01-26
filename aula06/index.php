@@ -10,15 +10,15 @@
 <form action="index.php" method="post">
 <input type="submit" name="campo1" value="ligar">
 <input type="submit" name="campo1" value="desligar"><br>
-<input type="button" name="campo1" value="aumentar">
-<input type="button" name="campo1" value="diminuir"><br>
+<input type="submit" name="campo1" value="aumentar">
+<input type="submit" name="campo1" value="diminuir"><br>
 
 </form>
 <pre>
 
 <?php
 
-    echo "O valor de CAMPO 1 é: " . $_POST["campo1"]."<br>";
+    echo "VALOR VEIO DO HTML ==> " . $_POST["campo1"]."<br>";
     //echo "<br>O valor de CAMPO 2 é: " . $_POST["campo2"]."</br>";
     $n =  $_POST["campo1"];
     var_dump($n);
@@ -27,8 +27,8 @@
     $c1 = new ControleRemoto;
     //construtor do objeto
     $c1->ControleRemoto();
-    print_r($c1);
     $c1->teste($n);
+    //print_r($c1);
     
     
 

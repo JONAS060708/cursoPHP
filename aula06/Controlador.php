@@ -1,6 +1,8 @@
 <?php
+// BUSCAR INTERFACE
+require_once 'Interface.php';
 //CLASSE
-    class ControleRemoto{
+    class ControleRemoto implements Controlador {
     //ATRIBUTOS    
        private $volume;
        private $ligado;
@@ -34,10 +36,12 @@ public function ControleRemoto()
                     $this->desligar();
                     break;     
                case 'aumentar':
+                    $this->ligar();
+                    $this->abrirMenu();
                    $this->maisVolume();
                     break;                
                default:
-                   echo "COMANDO NÃO ENCONTRADO";
+                   echo "COMANDO NÃO ENCONTRADO<br>";
                    break;
            }
         }
@@ -131,5 +135,3 @@ public function ControleRemoto()
 
 
     }
-
-?>
