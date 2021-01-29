@@ -12,7 +12,8 @@
     require_once'Reptil.php';
     require_once'Ave.php';
     require_once'Peixe.php';
-    require_once'Canguru.php';
+    require_once'Lobo.php';
+    require_once'Cachorro.php';
     $a = array();
 
     $a[0] = new Mamifero(100,10,4,'PRETO');
@@ -20,7 +21,8 @@
     $a[2] = new Ave(3,7,4,'PRATA');
     $a[3] = new Peixe(500,3,2,'AZUL');
 
-    $a[4] = new Canguru(50,12,5,'MARRON');
+    $a[4] = new Lobo(50,12,5,'Branco');
+    $a[5] = new Cachorro(5,4,4,"colorido");
     
     for ($i=0; $i < sizeof($a); $i++) { 
         print_r($a[$i]);
@@ -31,6 +33,7 @@
     $a[2]->locomover();
     $a[3]->locomover();
     $a[4]->locomover();
+    $a[5]->locomover();
 
 
 

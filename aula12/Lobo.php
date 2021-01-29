@@ -1,11 +1,11 @@
 <?php
 require_once 'Mamifero.php';
-    class Canguru extends Mamifero{
+    class Lobo extends Mamifero{
        
 
         public function locomover()
        {
-           echo '<p>SALTAR</p>';
+           echo '<p>caçando</p>';
            
        }
 
