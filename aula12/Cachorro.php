@@ -1,6 +1,6 @@
 <?php
 require_once 'Lobo.php';
-class Cachorro extends Lobo
+class Cachorro extends Lobo 
 {
 
 
@@ -24,7 +24,7 @@ class Cachorro extends Lobo
                 break;
         }
     }
-    public function reagir($hora, $min)
+    public function reagirF($hora, $min)
     {
         if ($hora < 12 && $min < 45) {
             echo 'abanar rabo';
@@ -34,7 +34,7 @@ class Cachorro extends Lobo
             echo 'abanar e latir';
         }
     }
-    public function reagir($dono)
+    public function reagirD($dono)
     {
         if ($dono) {
             echo 'Abanar';
@@ -42,7 +42,7 @@ class Cachorro extends Lobo
             echo 'Rosnar e Latir';
         }
     }
-    public function reagir($idade, $peso)
+    public function reagirIP($idade, $peso)
     {
         if ($idade < 5) {
             echo 'Cachoro novo';

@@ -11,6 +11,7 @@
 
                            POLIMORFISMO DE SOBRECARGA
     MESMA ASSINATURA(descrição) diferente apenas no tipo DE  MÉTODO DE TIPOS DIFERENTES NA MESMA CLASSE 
+    PHP NÃO SUPORTA SOBRECARGA -- feito métodos diferentes
  */
 
  ?>

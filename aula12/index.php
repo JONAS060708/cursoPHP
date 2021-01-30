@@ -6,6 +6,7 @@
     <title>POLIMORFISMO</title>
 </head>
 <body>
+
     <pre>
     <?php
     require_once'Mamifero.php';
@@ -34,6 +35,8 @@
     $a[3]->locomover();
     $a[4]->locomover();
     $a[5]->locomover();
+
+    $a[5]->reagirD('');
 
 
 
