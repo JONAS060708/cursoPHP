@@ -1,5 +1,6 @@
 <?php
 require_once'VideoInterface.php';
+//IMPLEMENTS É USADO QUANDO A CLASSE CHAMADA É ABSTRATA OU SEJA UMA INTERFACE
 class Video implements VideoI{
     private $titulo,$avaliacao,$views,$curtidadas,$reproduzindo;
 
@@ -8,7 +9,7 @@ class Video implements VideoI{
     public function __construct($titulo='')
     {
         $this->setTitulo($titulo);
-        $this->avaliacao=1;
+        $this->avaliacao=0;
         $this->views=0;
         $this->curtidadas=0;
         $this->reproduzindo=false;
@@ -65,7 +66,9 @@ class Video implements VideoI{
      */ 
     public function setAvaliacao($avaliacao)
     {
-        $this->avaliacao = $avaliacao;
+        //pega as avaliações e divie pela quantidade de views e retorna a média
+        $media = ($this->avaliacao + $avaliacao) / $this->views;
+        $this->avaliacao = $media;
 
         return $this;
     }
