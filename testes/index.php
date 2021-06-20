@@ -7,6 +7,7 @@
     <title>PHP ESTUDOS</title>
 </head>
 <body>
+<h1>ESTUDOS PHP</h1>
 <?php
 //INSTALADO O CHAMP E O LIVE SERVER NO CHROME  e CONFIGURADO VARIAVEL DE AMBIENTE NO WINDOS c:/xampp/php
     for ($i=0; $i <= 100 ; $i++) { 
